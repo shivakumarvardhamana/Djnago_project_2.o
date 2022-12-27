@@ -1,0 +1,12 @@
+<h3>iam</h3>
+<form method="POST" action="{%url 'call' task%}" >
+    {%csrf_token%}
+    {{form.emp_id}}
+    {{task}}
+    <a href='{% url "call" task %}'>  <input type="submit" name="submit" value="Submit" /></a>
+    
+
+</form> 
+
+
+ 
